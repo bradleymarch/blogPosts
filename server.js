@@ -14,3 +14,7 @@ app.use('/blog-posts', blogPostsRouter);
 app.listen(process.env.PORT || 8080, () => {
   console.log(`Your app is listening on port ${process.env.PORT || 8080}`);
 });
+
+const stuffToExport = require('app', 'runServer', 'closeServer')
+//export app, runServer and closeServer
+module.exports = stuffToExport;
